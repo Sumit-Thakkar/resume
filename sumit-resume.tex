@@ -2,22 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage{palatino}
 \usepackage{geometry}
-\usepackage{fontawesome}
 \usepackage{hyperref}
-\usepackage{titlesec}  % For custom section titles
-\usepackage{enumitem}  % For item spacing
+\usepackage{enumitem}
 \usepackage{parskip}
-\usepackage{ragged2e}      % For justification
-\usepackage[none]{hyphenat}  % Prevents bad hyphenation
-\usepackage{microtype}     % Improves justification
-
 
 % Set page margins
 \geometry{
-  top=1.2in,
-  bottom=1.2in,
-  left=1in,
-  right=1in
+  top=0.7in,
+  bottom=0.7in,
+  left=0.7in,
+  right=0.7in
 }
 
 % Hyperlink styling
@@ -29,99 +23,133 @@
 % No page number
 \pagestyle{empty}
 
-% Section formatting
-\titleformat{\section}{
-  \Large\bfseries
-}{}{0em}{}[\titlerule]
-
 % Reduce spacing between items
-\setlist[itemize]{itemsep=3pt, topsep=3pt}
+\setlist[itemize]{itemsep=2pt, topsep=2pt, parsep=0pt}
 
 \begin{document}
-\justifying
+
+% Header
 \begin{center}
-  {\Huge \textbf{Sumit Thakkar}}\\[8pt]
-  \faPhone \ +91 63550 61859 \quad
-  \faEnvelope \ \href{mailto:thakkarsumit1112@gmail.com}{thakkarsumit1112@gmail.com} \quad
-  \faLinkedinSquare \ \href{https://linkedin.com/sumitthakkar}{linkedin.com/sumitthakkar}
+  {\Huge \textbf{Sumit Thakkar}}\\[10pt]
+  Phone: +91 63550 61859 $|$ 
+  Email: \href{mailto:thakkarsumit1112@gmail.com}{thakkarsumit1112@gmail.com} $|$ 
+  LinkedIn: \href{https://www.linkedin.com/in/sumitthakkar}{sumitthakkar}
 \end{center}
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 
-\section*{Education}
-
-\textbf{Gujarat University}, Ahmedabad, India \\
-\textit{Master of Computer Application – First Class} \hfill \textbf{Completed:} June 2024
+% Professional Summary
+\noindent\textbf{\large PROFESSIONAL SUMMARY}
+\vspace{0.1cm}
+\hrule
+\vspace{0.15cm}
+\noindent Data Engineer with 2 years of experience in building data pipelines, data warehousing, and cloud solutions. Proficient in SQL, Python, Snowflake, and AWS/Azure platforms. Demonstrated expertise in data quality improvement, process automation, and cross-functional collaboration.
 
 \vspace{0.3cm}
 
-\textbf{Shree V R Patel College of Commerce, HNGU}, Gujarat, India \\
-\textit{Bachelor of Commerce – First Class Distinction} \hfill \textbf{Completed:} May 2022
-
-\vspace{0.4cm}
-
-\section*{Experience}
-
-\textbf{Data Engineer} \hfill April 2025 – Present \\
-\textit{Inferenz Tech Pvt. Ltd., Ahmedabad} 
-\begin{itemize}
-  \item Working on the Finance module with a focus on enhancing data quality and reporting accuracy.
-  \item Identified and resolved issues related to orphan invoice numbers, improving data consistency and financial traceability.
-  \item Currently building AR (Accounts Receivable) reports in the report layer to support downstream BI consumption.
+% Skills
+\noindent\textbf{\large SKILLS}
+\vspace{0.1cm}
+\hrule
+\vspace{0.15cm}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Programming Languages:} Python, SQL
+  \item \textbf{Data Engineering:} ETL Pipelines, Data Warehousing, Stored Procedures, API Integration, SQL Views, Data Quality Management
+  \item \textbf{Databases \& Data Platforms:} Snowflake, MySQL, MongoDB, Neo4j, Amazon DynamoDB
+  \item \textbf{Cloud Platforms:} AWS (S3, IAM, EC2, RDS, DynamoDB, Batch, ECS Managed Airflow), Azure (ADF, Azure Functions, Blob Storage, ADLS Gen2)
+  \item \textbf{Big Data \& Analytics:} Databricks, Snowpark, Apache Airflow, PySpark
+  \item \textbf{Tools \& Technologies:} Git, GitHub, Terraform (Infrastructure as Code), Selenium, BeautifulSoup, Pandas
+  \item \textbf{Data Visualization:} Matplotlib, seaborn
 \end{itemize}
 
-\vspace{0.4cm}
+\vspace{0.3cm}
 
-\textbf{Junior Data Engineer} \hfill July 2024 – March 2025 \\
-\textit{Inferenz Tech Pvt. Ltd., Ahmedabad} 
+% Experience
+\noindent\textbf{\large PROFESSIONAL EXPERIENCE}
+\vspace{0.1cm}
+\hrule
+\vspace{0.2cm}
+
+\noindent\textbf{Data Engineer} \hfill \textbf{April 2025 – Present} \\
+\textit{Inferenz Tech Pvt. Ltd., Ahmedabad, India}
 \begin{itemize}
-  \item Developed and optimized SQL stored procedures for efficient data management.
-  \item Analyzed API responses and created actionable reports.
-  \item Transformed semi-structured data in a snowflake.
-  \item Collaborated with global teams to troubleshoot transmission failures.
-  \item Hands on experience with Snowpark, Databricks, ADF, Azure Functions.
+  \item Designed a scalable cloud-agnostic data architecture for ingesting and processing data from multiple source systems into a centralized data warehouse.
+ \item Developed cross-cloud data pipelines that integrate Azure-hosted APIs with AWS services (Glue, S3, Redshift), ensuring reliable data ingestion and transformation.
+ \item Improved data quality and reporting accuracy in the Finance module by identifying and resolving critical data issues, including orphan invoice records.
+ \item Built Accounts Receivable (AR) reports to support downstream BI and financial analytics.
+ \item Automated the employee benefits workflow by implementing an ETL pipeline using AWS Batch, ECS, and Managed Airflow, reducing manual effort and processing time.
+ \item Collaborated with cross-functional teams to ensure data accuracy and alignment with business requirements.
 \end{itemize}
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
-\textbf{Junior Data Engineer - Intern} \hfill Jan 2024 – June 2024 \\
-\textit{Inferenz Tech Pvt. Ltd., Ahmedabad} 
+\noindent\textbf{Junior Data Engineer} \hfill \textbf{July 2024 – March 2025} \\
+\textit{Inferenz Tech Pvt. Ltd., Ahmedabad, India}
 \begin{itemize}
-  \item Data cleansing and transformation performed using SQL and Python (Pandas).
-  \item Built web scrapers using Selenium, BeautifulSoup (bs4), and Requests libraries in Python.
-  \item Gained hands-on experience with NoSQL databases such as MongoDB and Amazon DynamoDB.
-  \item Completed Snowflake badges focused on SaaS Warehouse Management and Big Data Analysis.
-  \item Used Git and GitHub for version control and collaborative development.
-  \item Applied Infrastructure as Code concepts using Terraform.
-  \item Completed AWS Cloud Quest: Cloud Practitioner certification.
+  \item Developed and optimized SQL stored procedures for efficient data management and transformation in production environments.
+  \item Analyzed API responses and created actionable reports to support business decision-making and operational monitoring.
+  \item Transformed semi-structured data in Snowflake data warehouse, ensuring data quality and consistency.
+  \item Collaborated with global teams to troubleshoot and resolve data transmission failures, ensuring seamless data flow across systems.
+  \item Gained hands-on experience with Snowpark, Databricks, Azure Data Factory (ADF), and Azure Functions for building scalable data solutions.
+  \item Worked on proof-of-concept projects demonstrating end-to-end ETL workflows using Azure and Snowflake technologies.
 \end{itemize}
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
-\section*{Certifications}
-
+\noindent\textbf{Junior Data Engineer - Intern} \hfill \textbf{January 2024 – June 2024} \\
+\textit{Inferenz Tech Pvt. Ltd., Ahmedabad, India}
 \begin{itemize}
-  \item Apache Airflow 2 Fundamentals - \textit{Astronomer}, Aug 2025
-  \item Neo4j Certified Professional – \textit{Neo4j}, Mar 2025
-  \item Databricks Fundamentals – \textit{Databricks}, Jan 2025
-  \item AWS Cloud Quest: Cloud Practitioner – \textit{AWS}, June 2024
-  \item Snowflake Data Engineering Workshop – \textit{Snowflake}, Apr 2024
-  \item Snowflake Warehousing, Marketplace, Application Builders, and Data Lake Workshops – Apr 2024
+  \item Performed data cleaning and transformation using SQL and Python (Pandas) to prepare datasets for analysis and reporting.
+  \item Built web scrapers using Selenium, BeautifulSoup (bs4), and Requests library in Python to extract data from various web sources.
+  \item Gained hands-on experience with NoSQL databases including MongoDB and Amazon DynamoDB for handling unstructured data.
+  \item Completed Snowflake badges focused on SaaS Warehouse Management and Big Data Analysis, demonstrating platform proficiency.
+  \item Used Git and GitHub for version control and collaborative development in team environments.
+  \item Applied Infrastructure as Code (IaC) concepts using Terraform for cloud resource provisioning and management.
+  \item Completed AWS Cloud Quest: Cloud Practitioner certification, building foundational cloud computing knowledge.
 \end{itemize}
 
-\vspace{0.4cm}
+\vspace{0.3cm}
 
-\section*{Technical Skills}
+% Education
+\noindent\textbf{\large EDUCATION}
+\vspace{0.1cm}
+\hrule
+\vspace{0.2cm}
 
-\begin{tabular}{@{}lp{\dimexpr\linewidth-3.5cm}}
-\textbf{Programming}       & Python, SQL \\[6pt]
-\textbf{Databases}         & Snowflake, MySQL, MongoDB, Neo4j \\[6pt]
-\textbf{Cloud Platforms}   & AWS (S3, IAM, EC2, RDS, DynamoDB), Azure (ADF, Azure Functions, Blob Storage) \\[6pt]
-\textbf{Data Engineering}  & Stored Procedures, API Integration, SQL Views, Data Governance, Data cleansing and transformation \\[6pt]
-\textbf{Visualization}     & Matplotlib \\[6pt]
-\textbf{Version Control}   & Git, GitHub \\[6pt]
-\textbf{Soft Skills}       & Problem-solving, Analytical Thinking, Communication
-\end{tabular}
+\noindent\textbf{Master of Computer Application (MCA)} – First Class \hfill \textbf{Completed: June 2024} \\
+\textit{Gujarat University, Ahmedabad, India}
 
+\vspace{0.15cm}
+
+\noindent\textbf{Bachelor of Commerce (B.Com)} – First Class with Distinction \hfill \textbf{Completed: May 2022} \\
+\textit{Shree V R Patel College of Commerce, HNGU, Gujarat, India}
+
+\vspace{0.3cm}
+
+% Certifications
+\noindent\textbf{\large CERTIFICATIONS}
+\vspace{0.1cm}
+\hrule
+\vspace{0.15cm}
+\begin{itemize}[leftmargin=*]
+  \item Databricks Certified Data Engineer Associate – Databricks, December 2025
+  \item Neo4j Certified Professional – Neo4j, March 2025
+  \item Databricks Fundamentals – Databricks, January 2025
+  \item AWS Cloud Quest: Cloud Practitioner – Amazon Web Services, June 2024
+  \item Snowflake Data Engineering Workshop – Snowflake, April 2024
+  \item Snowflake Warehousing, Marketplace, Application Builders and Data Lake Workshops – Snowflake, April 2024
+\end{itemize}
+
+\vspace{0.3cm}
+
+% Addtional Information
+\noindent\textbf{\large Addtional Information}
+\vspace{0.1cm}
+\hrule
+\vspace{0.15cm}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Soft Skills:} Problem-Solving, Analytical Thinking, Communication, Team Collaboration
+  \item \textbf{Languages:} English, Hindi, Gujarati, Sindhi
+\end{itemize}
 
 \end{document}
