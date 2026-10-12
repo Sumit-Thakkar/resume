@@ -5,13 +5,14 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{parskip}
+\usepackage{fontawesome5}
 
 % Set page margins
 \geometry{
-  top=0.7in,
-  bottom=0.7in,
-  left=0.7in,
-  right=0.7in
+  top=0.5in,
+  bottom=0.5in,
+  left=0.6in,
+  right=0.6in
 }
 
 % Hyperlink styling
@@ -30,10 +31,13 @@
 
 % Header
 \begin{center}
-  {\Huge \textbf{Sumit Thakkar}}\\[10pt]
-  Phone: +91 63550 61859 $|$ 
-  Email: \href{mailto:thakkarsumit1112@gmail.com}{thakkarsumit1112@gmail.com} $|$ 
-  LinkedIn: \href{https://www.linkedin.com/in/sumitthakkar}{sumitthakkar}
+  {\Huge \textbf{Sumit Thakkar}}\\[8pt]
+  {\small
+  \faPhone\ +91 63550 61859 \enspace$|$\enspace
+  \faEnvelope\ \href{mailto:thakkarsumit1112@gmail.com}{thakkarsumit1112@gmail.com} \enspace$|$\enspace
+  \faLinkedin\ \href{https://www.linkedin.com/in/sumitthakkar}{sumitthakkar} \enspace$|$\enspace
+  \faGithub\ \href{https://github.com/Sumit-Thakkar}{Sumit-Thakkar}
+  }
 \end{center}
 
 \vspace{0.2cm}
@@ -45,7 +49,7 @@
 \vspace{0.15cm}
 \noindent Data Engineer with 2.9 years of experience building data pipelines, data warehousing, and cloud solutions. Proficient in SQL, Python, dbt, Snowflake and AWS/Azure platforms. Demonstrated expertise in data quality improvement, process automation, and cross-functional collaboration.
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 
 % Skills
 \noindent\textbf{\large SKILLS}
@@ -56,13 +60,12 @@
   \item \textbf{Programming Languages:} Python, SQL
   \item \textbf{Data Engineering:} ETL Pipelines, Data Warehousing, Stored Procedures, API Integration, SQL Views, Data Quality Management
   \item \textbf{Databases \& Data Platforms:} Snowflake, MySQL, MongoDB, Neo4j, Amazon DynamoDB
-  \item \textbf{Cloud Platforms:} AWS (S3, IAM, EC2, RDS, DynamoDB, Batch, ECS Managed Airflow), Azure (ADF, Azure Functions, Blob Storage, ADLS Gen2)
-  \item \textbf{Big Data \& Analytics:} Databricks, Snowpark, Apache Airflow, PySpark
-  \item \textbf{Tools \& Technologies:} Git, GitHub, Terraform (Infrastructure as Code), Selenium, BeautifulSoup, Pandas
-  \item \textbf{Data Visualization:} Matplotlib, seaborn
+  \item \textbf{Cloud Platforms:} AWS (S3, IAM, Glue, Lambda), Azure (ADF, Azure Functions, ADLS Gen2)
+  \item \textbf{Big Data \& Analytics:} dbt, Databricks, Snowpark, Apache Airflow, PySpark, Pandas
+  \item \textbf{Tools \& Technologies:} Git, GitHub, Terraform (Infrastructure as Code)
 \end{itemize}
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 
 % Experience
 \noindent\textbf{\large PROFESSIONAL EXPERIENCE}
@@ -109,7 +112,23 @@
   \item Completed AWS Cloud Quest: Cloud Practitioner certification, building foundational cloud computing knowledge.
 \end{itemize}
 
-\vspace{0.3cm}
+\vspace{0.2cm}
+
+% Projects
+\noindent\textbf{\large PROJECTS}
+\vspace{0.1cm}
+\hrule
+\vspace{0.2cm}
+
+\noindent\textbf{SkyPoints Global Airline Loyalty Data Platform} $|$ Snowflake, dbt, SQL, Git \hfill \href{https://github.com/Sumit-Thakkar/skypoints-loyalty-platform}{\textbf{GitHub}}
+\begin{itemize}
+  \item \textbf{Engineered a Cloud Data Platform on Snowflake \& dbt:} Architected an end-to-end Medallion pipeline ingesting daily member feeds and JSON redemption streams with automated schema validation and ISO-3 country code standardisation via reference seeds.
+  \item \textbf{Designed Fault-Tolerant Dead Letter Queues:} Created an isolated DLQ layer separating syntactical corruption from orphan transactions, ensuring 100\% of clean data flows to analytics while logging row-level failure diagnostics for data stewards.
+  \item \textbf{Delivered High-Performance Gold Marts:} Built 5 regional customer marts with SCD-1 deduplication alongside a two-tier fact model (transaction-grain fact + pre-aggregated summary mart) to eliminate full-table scans for executive reporting.
+  \item \textbf{Implemented Comprehensive Data Testing:} Authored 90+ schema and custom singular SQL tests verifying referential integrity, mutual exclusivity, and business invariants across all lakehouse layers.
+\end{itemize}
+
+\vspace{0.2cm}
 
 % Education
 \noindent\textbf{\large EDUCATION}
@@ -120,12 +139,11 @@
 \noindent\textbf{Master of Computer Application (MCA)} – First Class \hfill \textbf{Completed: June 2024} \\
 \textit{Gujarat University, Ahmedabad, India}
 
-\vspace{0.15cm}
 
 % \noindent\textbf{Bachelor of Commerce (B.Com)} – First Class with Distinction \hfill \textbf{Completed: May 2022} \\
 % \textit{Shree V R Patel College of Commerce, HNGU, Gujarat, India}
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 
 % Certifications
 \noindent\textbf{\large CERTIFICATIONS}
@@ -137,14 +155,13 @@
   \item Neo4j Certified Professional – Neo4j, March 2025
   \item Databricks Fundamentals – Databricks, January 2025
   \item AWS Cloud Quest: Cloud Practitioner – Amazon Web Services, June 2024
-  \item Snowflake Data Engineering Workshop – Snowflake, April 2024
-  \item Snowflake Warehousing, Marketplace, Application Builders and Data Lake Workshops – Snowflake, April 2024
+  \item Snowflake Data Engineering, Warehousing, Marketplace, Application Builders and Data Lake Workshops – Snowflake, April 2024
 \end{itemize}
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 
-% Addtional Information
-\noindent\textbf{\large Addtional Information}
+% Additional Information
+\noindent\textbf{\large ADDITIONAL INFORMATION}
 \vspace{0.1cm}
 \hrule
 \vspace{0.15cm}
